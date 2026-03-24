@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Restaurant | A Legacy of Taste, Served with a Motherly Touch</title>
+    <meta name="description" content="Experience the Taste of Tradition & Global Flavors at Pearl Restaurant. Authentic South Indian, Arabic, Indo-Chinese and Continental cuisines.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                Pearl<span>.</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline-nav">Reserve Table</a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-menu" id="close-menu"><i class="fas fa-times"></i></button>
+        <div class="mobile-nav-links">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#menu" class="mobile-link">Menu</a>
+            <a href="#why-us" class="mobile-link">Why Us</a>
+            <a href="#testimonials" class="mobile-link">Reviews</a>
+            <a href="#contact" class="btn btn-primary mt-4 w-full text-center">Reserve Table</a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero fade-in-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="tagline parallax-element reveal-up delay-1">A Legacy of Taste, Served with a Motherly Touch</span>
+            <h1 class="parallax-element skew-up reveal-up delay-2">Experience the Taste of <br><span class="text-gold skew-up-inner">Tradition</span> & Global Flavors</h1>
+            <p class="hero-subtext parallax-element reveal-up delay-3">From authentic South Indian delicacies to Arabic grills and Indo-Chinese favorites — all crafted with a homely touch.</p>
+            <div class="hero-buttons parallax-element reveal-up delay-4">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-outline">Reserve Table</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-image-wrapper reveal-left">
+                <div class="about-image-overlay">
+                    <div class="experience-badge">
+                        <span class="number">10+</span>
+                        <span class="text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <img src="assets/about.png" alt="Pearl Restaurant Interior" class="about-image">
+            </div>
+            
+            <div class="about-content reveal-right">
+                <div class="section-heading">
+                    <span class="subtitle">Our Story</span>
+                    <h2>A Dining Experience Rooted in Tradition</h2>
+                    <div class="heading-line"></div>
+                </div>
+                
+                <p class="about-text">Pearl Restaurant brings together the richness of South Indian heritage and the excitement of global cuisines. Known for our signature dishes like Mutton Chukka, Bamboo Biriyani, and Poricha Parotta, every meal is prepared with care, flavor, and a touch of home.</p>
+                
+                <ul class="about-highlights">
+                    <li>
+                        <div class="icon-box"><i class="fas fa-utensils"></i></div>
+                        <span>Multi-cuisine excellence under one roof</span>
+                    </li>
+                    <li>
+                        <div class="icon-box"><i class="fas fa-users"></i></div>
+                        <span>Family-friendly, comfortable ambiance</span>
+                    </li>
+                    <li>
+                        <div class="icon-box"><i class="fas fa-heart"></i></div>
+                        <span>Trusted by 500+ happy diners daily</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Menu / Services Section -->
+    <section id="menu" class="menu section-padding bg-light">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="subtitle">Discover Our Flavors</span>
+                <h2>Signature Creations</h2>
+                <div class="heading-line mx-auto"></div>
+                <p class="section-desc mx-auto">Explore our diverse culinary offerings spanning across authentic regional specialties and popular global cuisines.</p>
+            </div>
+            <div class="menu-grid">
+                <!-- South Indian Card -->
+                <div class="menu-card reveal-up delay-1">
+                    <div class="menu-image-container">
+                        <img src="assets/south_indian.png" alt="South Indian Specials" class="menu-image">
+                        <div class="menu-category-badge">South Indian</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>South Indian Specials</h3>
+                        <p>Authentic flavors from the heartland. Try our signature Mutton Chukka, Bamboo Biriyani, and Poricha Parotta.</p>
+                        <a href="javascript:void(0)" class="btn-text menu-popup-trigger" data-category="south-indian">See Dishes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Arabic Grills Card -->
+                <div class="menu-card reveal-up delay-2">
+                    <div class="menu-image-container">
+                        <img src="assets/arabic.png" alt="Arabic Grills" class="menu-image">
+                        <div class="menu-category-badge">Arabic Grills</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Arabic Grills</h3>
+                        <p>Sizzling straight from the tandoor. Perfectly seasoned Tandoori Chicken and our special mixed grills.</p>
+                        <a href="javascript:void(0)" class="btn-text menu-popup-trigger" data-category="arabic">See Dishes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Indo-Chinese Card -->
+                <div class="menu-card reveal-up delay-3">
+                    <div class="menu-image-container">
+                        <img src="assets/indo_chinese.png" alt="Indo-Chinese Favorites" class="menu-image">
+                        <div class="menu-category-badge">Indo-Chinese</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Indo-Chinese Favorites</h3>
+                        <p>Zesty and flavorful woks. Chicken Manchurian Dry, Schezwan Noodles, and spicy Fried Rice.</p>
+                        <a href="javascript:void(0)" class="btn-text menu-popup-trigger" data-category="indo-chinese">See Dishes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Beverages & Desserts Card -->
+                <div class="menu-card reveal-up delay-4">
+                    <div class="menu-image-container">
+                        <img src="assets/dessert.png" alt="Beverages & Desserts" class="menu-image">
+                        <div class="menu-category-badge">Desserts</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Beverages & Desserts</h3>
+                        <p>The perfect sweet ending. Indulge in our famous Royal Falooda, fresh juices, and traditional sweets.</p>
+                        <a href="javascript:void(0)" class="btn-text menu-popup-trigger" data-category="desserts">See Dishes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 reveal-up delay-5">
+                <a href="#contact" class="btn btn-primary">Book a Table for Dinner</a>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-us section-padding">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="subtitle">Our Promise</span>
+                <h2>Why Pearl Restaurant Stands Out</h2>
+                <div class="heading-line mx-auto"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal-up delay-1">
+                    <div class="feature-icon"><i class="fas fa-concierge-bell"></i></div>
+                    <h3>Authentic Multi-Cuisine</h3>
+                    <p>Experience true flavors from South India, Arabia, and Asia all under one roof.</p>
+                </div>
+                <div class="feature-card reveal-up delay-2">
+                    <div class="feature-icon"><i class="fas fa-users-rays"></i></div>
+                    <h3>Perfect for Gatherings</h3>
+                    <p>Spacious seating perfect for families, groups, and cozy dinners for couples.</p>
+                </div>
+                <div class="feature-card reveal-up delay-3">
+                    <div class="feature-icon"><i class="fas fa-wallet"></i></div>
+                    <h3>Affordable Premium</h3>
+                    <p>Enjoy premium dining and high-quality ingredients at rates that feel just right.</p>
+                </div>
+                <div class="feature-card reveal-up delay-4">
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Signature Recipes</h3>
+                    <p>Traditional recipes handed down through generations with a touch of home flavor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section-padding bg-light">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <span class="subtitle">Word of Mouth</span>
+                <h2>What Our Guests Say</h2>
+                <div class="heading-line mx-auto"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-up delay-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Good service and tasty food — perfect place to relax! The mutton chukka was exceptionally flavorful and the ambiance was top notch."</p>
+                    <div class="author">
+                        <div class="avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <span>Local Guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up delay-2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="quote">"Great variety and flavors, loved the tandoori and noodles. It's rare to find a place that excels at multiple cuisines, but Pearl nails it."</p>
+                    <div class="author">
+                        <div class="avatar">A</div>
+                        <div class="author-info">
+                            <h4>Anita Sharma</h4>
+                            <span>Food Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up delay-3">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"A highly recommended place for family dinners. The Bamboo Biriyani is a must-try. The staff is polite and very welcoming."</p>
+                    <div class="author">
+                        <div class="avatar">S</div>
+                        <div class="author-info">
+                            <h4>Suresh Menon</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact & Final CTA -->
+    <section id="contact" class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info section-padding reveal-left">
+                <div class="contact-content">
+                    <div class="section-heading">
+                        <span class="subtitle">Visit Us</span>
+                        <h2 style="color: var(--white);">Location & Hours</h2>
+                        <div class="heading-line"></div>
+                    </div>
+                    
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>43/7-7, Asaripallam Medical College Road, Nagercoil, Tamil Nadu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Reservations & Takeaway</h4>
+                                <p>94892 50999</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Open Daily from 11:00 AM to 11:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-buttons mt-4">
+                        <a href="https://maps.google.com/?q=Nagercoil" target="_blank" class="btn btn-primary">Get Directions</a>
+                        <a href="tel:+919489250999" class="btn btn-outline">Call Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="final-cta reveal-right">
+                <div class="final-cta-overlay"></div>
+                <div class="final-cta-content text-center">
+                    <h2>Ready to Satisfy Your Cravings?</h2>
+                    <p>Join us today and enjoy a memorable dining experience with your loved ones.</p>
+                    <a href="tel:+919489250999" class="btn btn-primary mt-3">Reserve Your Table Now</a>
+                    <a href="https://wa.me/919489250999" target="_blank" class="btn btn-outline mt-3 ml-3"><i class="fab fa-whatsapp"></i> Order Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container border-top text-center py-4">
+            <p>&copy; 2026 Pearl Restaurant. All Rights Reserved. Designed to perfection.</p>
+        </div>
+    </footer>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919489250999" class="whatsapp-float popup-animation" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Menu Modal Popup -->
+    <div id="menu-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Category Menu</h2>
+            <div id="modal-body" class="modal-body">
+                <!-- Modal items will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
